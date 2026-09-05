@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Antigravity Element Inspector",
+  "version": "1.0.0",
+  "description": "Cursor-style element picker for Google Antigravity. Click any element to copy it formatted for AI chat.",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost/*",
+        "http://127.0.0.1/*",
+        "http://[::1]/*",
+        "http://*.localhost/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

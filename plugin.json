@@ -1,0 +1,15 @@
+{
+  "name": "antigravity-live-preview",
+  "version": "1.0.0",
+  "description": "Interactive Browser Preview with one-click Cursor-style Element Inspector for any web project in Antigravity",
+  "author": {
+    "name": "Antigravity Team"
+  },
+  "keywords": [
+    "preview",
+    "browser",
+    "inspector",
+    "live-preview",
+    "cursor-style"
+  ]
+}
