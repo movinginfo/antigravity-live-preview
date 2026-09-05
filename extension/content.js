@@ -1,4 +1,4 @@
-// Antigravity Universal Element Inspector Content Script
+// Antigravity Universal Element Inspector Content Script (English)
 
 (function () {
   if (window.__AGY_INSPECTOR_INITIALIZED) return;
@@ -18,12 +18,12 @@
 
   const toast = document.createElement('div');
   toast.className = '__agy_toast';
-  toast.innerHTML = '<span>🎯</span> <span><b>Скопійовано для Antigravity!</b> Вставте в чат (Ctrl+V)</span>';
+  toast.innerHTML = '<span>🎯</span> <span><b>Copied for Antigravity!</b> Paste into chat (Ctrl+V)</span>';
   document.documentElement.appendChild(toast);
 
   const floatBtn = document.createElement('div');
   floatBtn.className = '__agy_float_btn';
-  floatBtn.title = 'Antigravity Element Picker (Alt + Клік)';
+  floatBtn.title = 'Antigravity Element Picker (Alt + Click)';
   floatBtn.innerHTML = `
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
       <path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/>
@@ -183,10 +183,10 @@
 
     // Build payload
     const parts = [];
-    if (comp) parts.push(`Компонент: <${comp} />`);
-    parts.push(`Елемент: <${tag}${id}${classes ? ' ' + classes : ''}>`);
-    if (text) parts.push(`Текст: "${text}"`);
-    if (selector) parts.push(`Селектор: ${selector}`);
+    if (comp) parts.push(`Component: <${comp} />`);
+    parts.push(`Element: <${tag}${id}${classes ? ' ' + classes : ''}>`);
+    if (text) parts.push(`Text: "${text}"`);
+    if (selector) parts.push(`Selector: ${selector}`);
 
     const payload = `[${parts.join(' | ')}]`;
 
